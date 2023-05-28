@@ -21,7 +21,7 @@ public class TrainController {
 
 	TrainServices trainServices;
 
-	@Autowired
+	
 	public TrainController(TrainServices services) {
 		this.trainServices=services;
 	}
@@ -38,12 +38,12 @@ public class TrainController {
 		return new ResponseEntity("Train List Saved Successfully", HttpStatus.CREATED);
 	}
 
-	@GetMapping("train")
+	@GetMapping("trains")
 	public List<TrainDetails> getAllTrains() {
 		return trainServices.getAllTrains();
 	}
 	
-	@GetMapping("train/{trainId}")
+	@GetMapping("trains/{trainId}")
 	public TrainDetails getTrainById(@PathVariable(name = "trainId") long trainId) {
 		return trainServices.getTrainById(trainId);
 	}

@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 
-@EnableEncryptableProperties()
+@EnableEncryptableProperties
 @SpringBootApplication
 public class TrainApiApplication {
 
