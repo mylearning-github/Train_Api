@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "4f2f1350-efc5-4724-b22c-f639859fbf59",
+		"name": "Train_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6896774"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
