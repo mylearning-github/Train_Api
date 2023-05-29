@@ -13,6 +13,36 @@
 				"header": []
 			},
 			"response": []
+		},
+		{
+			"name": "save train",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"trainName\":\"Visaka\",\r\n    \"tarinNumber\": 17015,\r\n    \"source\": \"Securendarabad\",\r\n    \"destination\":\"Bhuveneswar\",\r\n    \"trainStops\":[\r\n        {\r\n            \"stationName\":\"Guntur\",\r\n            \"stationCode\": \"Gu\",\r\n            \"arrivalTime\": \"20:00\",\r\n            \"depatureTime\": \"20:10\"\r\n        },\r\n        {\r\n            \"stationName\":\"Vijayawada\",\r\n            \"stationCode\": \"Bza\",\r\n            \"arrivalTime\": \"21:05\",\r\n            \"depatureTime\": \"21:20\"\r\n            \r\n        },\r\n        {\r\n            \"stationName\":\"Visakapatnam\",\r\n            \"stationCode\": \"vskp\",\r\n            \"arrivalTime\": \"07:10\",\r\n            \"depatureTime\": \"07:35\"\r\n        }\r\n        \r\n        \r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/train",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"train"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
